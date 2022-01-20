@@ -491,6 +491,7 @@ footer .copyright{
         flex-direction: column;
         position: fixed;
         gap: 20px;
+        z-index: 1000;
         inset: 0 0 0 30%;
         padding: min(30vh,10rem) 2em;
         background: linear-gradient(to right, #1f1e1e,#581A70);
