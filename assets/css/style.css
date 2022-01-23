@@ -31,9 +31,9 @@
     background-color: #000d;
 }
 
-/* body{
+body{
     background-color: #000;
-} */
+}
 /* .navbar{
     z-index: 999;
     position: fixed;
@@ -449,15 +449,19 @@
     text-align: center;
     background-image: linear-gradient(to right top, #282426, #362c34, #413445, #493e58, #4b4a6d, #3e4a6d, #304a6b, #204a68, #113b4e, #0e2c35, #0d1d20, #050c0c);    
 } */
-.card-header{
+.mid-section .card-header{
     display: flex;
     flex-direction: column  ;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(to right top, #0a0a0b, #18181d, #24242e, #2f303f, #3c3c51);
+    background:black;
     color: #fff;
     font-size: 1.175em;
+}
+
+.mid-section .card-header h1{
+    margin-top: 10px;
 }
 .mid-container{
     display: flex;
@@ -469,8 +473,7 @@
     width: 100%;
     height: auto;
     padding: 10px 10px;
-    /* background-image: linear-gradient(to right top, #282426, #362c34, #413445, #493e58, #4b4a6d, #3e4a6d, #304a6b, #204a68, #113b4e, #0e2c35, #0d1d20, #050c0c); */
-    background-image: linear-gradient(to right top, #0a0a0b, #18181d, #24242e, #2f303f, #3c3c51);
+    background: black;
     z-index: 1;
 }
 .mid-container h1{
@@ -526,6 +529,29 @@
 }
 
 
+.to-top-btn{
+    z-index: 9999;
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+
+.to-top-btn.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
 
 footer{
     width: 100%;
@@ -934,3 +960,4 @@ footer .copyright{
       
    }
 }
+
